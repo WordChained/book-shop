@@ -1,0 +1,115 @@
+     * {
+         box-sizing: border-box;
+     }
+     
+     body {
+         background-color: cornsilk;
+     }
+     
+     .rating {
+         margin: 10px
+     }
+     
+     .hide {
+         display: none;
+         left: -1000px
+     }
+     
+     .rating {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 120px;
+         height: 20px;
+         /* border: 2px solid; */
+         padding: 20px;
+     }
+     
+     .btn-quant {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border: none;
+         height: 10px;
+         width: 10px;
+         border-radius: 25%;
+         cursor: pointer;
+         font-size: 1em;
+         padding: 15px;
+     }
+     
+     .amount {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 40px;
+         height: 20px;
+         margin-left: 5px;
+         margin-right: 5px;
+     }
+     
+     .sortBy {
+         cursor: pointer;
+     }
+     
+     .details-modal {
+         background-color: darkorange;
+         width: 400px;
+         border-radius: 10px;
+         margin: auto 10px;
+         overflow-x: hidden;
+         /* transition: 1s; */
+         transform: translateX(100px);
+         /* max-width: 500px;
+         min-width: 400px; */
+     }
+     
+     table {
+         background-color: #fb1;
+         background-size: 40px 60px;
+         border-radius: 10px;
+         margin-bottom: 10px;
+     }
+     
+     th {
+         padding: 20px;
+         border: 4px chocolate solid;
+         border-radius: 7px;
+         font-size: 2em;
+     }
+     
+     td {
+         padding: 15px;
+         border: 4px rgb(207, 134, 82) solid;
+         font-weight: 900;
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         color: rgb(12, 54, 59)
+     }
+     
+     .btn-close {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         align-self: flex-end;
+         position: relative;
+         padding: 10px;
+         background-color: darkslategray;
+         border-radius: 7px;
+         cursor: pointer;
+     }
+     
+     button {
+         border-radius: 7px;
+         background-color: rgb(113, 151, 151);
+         cursor: pointer;
+     }
+     
+     .next-page {
+         margin-top: 10px;
+     }
+     
+     .book-image,
+     h1,
+     h3 {
+         margin-left: 20px
+     }

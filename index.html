@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>book-shop</title>
+</head>
+
+<body onload="onInit()">
+    <input class="title-input" type="text" placeholder="Add a Book title">
+    <input class="price-input" type="text" placeholder="Add a Price">
+    <button class="btn-addBook" onclick="onAddBook()">Add a Book</button>
+    <table border="1">
+        <thead>
+            <th>ID</th>
+            <th class="sortBy title" onclick="onSortBy(this)">Title</th>
+            <th class="sortBy price" onclick="onSortBy(this)">Price</th>
+            <th>Rating</th>
+            <th>Actions</th>
+        </thead>
+        <tbody class="table-body">
+
+        </tbody>
+    </table>
+    <button class="next-page" onclick="onNextPage()">Next Page(<span class="pageCount"></span>)</button>
+    <div class="details-modal hide"><button class="btn-close" onclick="closeModal()">X</button>
+        <h1>Book Details</h1>
+        <img class="book-image" src="" style="width: 100px">
+        <h3>Title: <span class="details-title"></span></h3>
+        <h3>Price: <span class="details-price"></span>$</h3>
+        <div class="rating">
+            <button class="btn-quant plus" onclick="onChangeRate(this)">➕</button>
+            <input class="amount" value="0">
+            <button class="btn-quant minus" onclick="onChangeRate(this)">➖</button>
+        </div>
+    </div>
+
+</body>
+<script src="js/utils-service.js"></script>
+<script src="js/book-storage-service.js"></script>
+<script src="js/book-service.js"></script>
+<script src="js/book-controller.js"></script>
+
+
+</html>
